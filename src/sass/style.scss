@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'titles';
+    src: url(../fonts/Changa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'paragraph';
+    src: url(../fonts/ReadexPro-VariableFont_wght.ttf);
+}
+
+.h2{
+    font-family: "titles";
+}
+p{
+    font-family: "paragraph";
+}
