@@ -6,10 +6,183 @@
     font-family: 'paragraph';
     src: url(../fonts/ReadexPro-VariableFont_wght.ttf);
 }
+$main-colord: #3d5a80;
+$second-color: #ee6c4d;
+$light-blue-2:#e0fbfc;
+$light-blue:#98c1d9;
+$second-color-light: #f9cec3;
+$dark-bg: #293241;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.h2{
+
+h1,h2,h3,h4,h5,h6{
     font-family: "titles";
 }
-p{
+p,a{
     font-family: "paragraph";
+}
+a:hover,:focus{
+    text-decoration: none;
+}
+.btn-send{
+    color: $light-blue-2;
+    background-color: $light-blue;
+    padding: 10px 15px;
+    font-weight: 500;       
+}
+.btn-services{
+    color: $second-color;
+    background-color: $second-color-light;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+// nav
+nav{
+    // ba9i khassni n9ad css l nav zwin 
+    a{
+        .logo-head{
+            width:50px;
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(102%) contrast(103%);
+        }
+    }
+    .collapse{
+        ul{
+            .active{
+                color: #ee6c4d !important;
+            }
+            li{
+                .nav-link{
+                    color: white ;
+                }
+                a:focus,
+                :hover{
+                    color: $second-color-light;
+                }
+            }
+            
+            
+        }
+    }
+}
+// header
+.header-img{
+    
+    min-height: 100vh;
+    background-image: url(../img/logo-head.jpg);
+    background-position: center;
+    background-size: cover;
+    .header{
+        background: #29324178;
+        min-height: 100vh;
+        
+        .r-1{
+            
+            .r-2{
+                .img-header-logo{
+                    
+                    
+                    max-width: 300px;
+                    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(359deg) brightness(102%) contrast(103%);
+                }
+                h1{
+                    
+                    color: #fff;
+                    line-height: 33px;
+                    
+                }
+            }
+            p{
+                color: #fff;
+                line-height: 33px;
+                margin-top: 90px;
+                font-size: 22px;
+                
+            }
+            margin-top: 150px;
+        }
+    }
+}
+
+// services
+.services{
+   
+    margin-top: 50px;
+    line-height: 33px;
+    margin-bottom: 50px;
+    
+    
+    .card{
+        height: 170px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 15px 2px $second-color-light;
+        background-color: $dark-bg;
+        color: white;
+        
+        h4{
+            color: $light-blue ;
+        }
+        .icon{
+            color: $light-blue-2;
+        }
+        p{
+            padding: 0px 20px;
+        }
+    }
+}
+
+// travel
+.travels{
+    margin-top: 100px;
+    margin-bottom:100px;
+    line-height: 33px;
+    padding-bottom: 150px;
+    background-color: $dark-bg;
+    .title-top{
+        h1{
+            margin-top: 30px;
+        }
+        color: white;
+        padding-top: 50px;
+    }
+    .carousel{
+        padding-top: 50px;
+        .carousel-inner{
+            .img-carousel{
+                width: 38%;
+                height: 30%;
+                border: 10px solid $light-blue-2;
+            }
+            
+        }
+        .fa-arrow-left{
+            font-size: 45px;
+            margin-left: 500px;
+        }
+        .fa-arrow-right{
+            font-size: 45px;
+            margin-right: 500px;
+        }
+    }
+}
+// contact
+.contact{
+    margin-bottom: 50px;
+    .info{
+        margin-top: 50px;
+        line-height: 33px;
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        color: #3d5a80;
+    }
 }
