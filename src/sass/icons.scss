@@ -1,0 +1,45 @@
+
+.icon{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff !important;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: .25s;
+}
+.icon:hover{
+    outline-offset: 4px;
+}
+.icon:hover i{
+    animation: shake .25s;
+}
+.icons--instagram:hover{
+    background-image:
+    radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,#fdf497 5%,
+        #fd5949 45%,#d6249f 60%,
+        #2b5aeb 90%);
+    outline-color: #a02d76;
+}
+.icons--in:hover{
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+.icons--git:hover{
+    background-color: #2e444f;
+    outline-color: #2e444f;
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}

@@ -1,0 +1,37 @@
+.title-top-1{
+    h1{
+        margin-top: 30px;
+        position: relative;
+        
+         
+    }
+    h1::after{
+        content: ""; 
+        display: block;
+        margin: 0 auto; 
+        width: 5%; 
+        
+        border-bottom: 3px solid $dark-bg; 
+    }
+    
+    color: $dark-bg;
+    padding-top: 50px;
+}
+.title-top{
+    h1{
+        margin-top: 30px;
+        position: relative;
+        
+         
+    }
+    h1::after{
+        content: ""; 
+        display: block; 
+        margin: 0 auto; 
+        width: 5%; 
+        border-bottom: 3px solid $light-blue-2; 
+    }
+    
+    color: white;
+    padding-top: 50px;
+}
