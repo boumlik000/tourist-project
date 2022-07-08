@@ -10,6 +10,15 @@
     padding: 10px 15px;
     font-weight: bold;
 }
+.btn-signin{
+    padding: 10px 15px;
+    font-weight: 500 ;
+    background-color: $dark-bg;
+    color: $light-blue-2;
+    &:hover,:focus{
+        color: $light-blue-2 ;
+    }
+}
 
 @media (max-width:992px) {
     .btn-send{

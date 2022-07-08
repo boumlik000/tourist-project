@@ -1,0 +1,68 @@
+.body-login{
+    background-color: rgb(222, 222, 222);
+}
+.row-login{
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px gray;
+    .logo-header{
+        width: 50px;
+
+        &:hover,:focus{
+            background-color: $light-blue-2;
+            padding: 2px;
+            filter: invert(27%) sepia(83%) saturate(372%) hue-rotate(176deg) brightness(93%) contrast(81%);
+        }
+    }
+    .form-control{
+        text-align: right;
+        direction: rtl;
+        &::placeholder{
+            text-align: right;
+        }
+    }
+    img{
+        z-index: 0;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .bg-img{
+        background-image: url(../img/login.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        
+        
+    }
+    .bg-screen{
+        height: 540px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background: rgba($dark-bg,  .7) ;
+        display: flex;
+        flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    //    h2{
+    //     position: absolute;
+    //     top: 120px;
+    //     right: 100px;
+    //     padding: 20px;
+    //    }
+    }
+}
+.footer-login{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    .icon{
+        color: $main-colord !important;
+        outline: 2px solid $main-colord;
+        &:hover{
+            color: #fff !important;
+        }
+    }
+}

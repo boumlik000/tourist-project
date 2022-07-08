@@ -2,6 +2,7 @@
 @import './buttons.scss';
 @import './icons.scss';
 @import './titles.scss';
+@import './login.scss';
 @font-face {
     font-family: 'titles';
     src: url(../fonts/Changa-VariableFont_wght.ttf);
@@ -139,7 +140,7 @@ nav{
     margin-bottom: 50px;
     
     
-    .card{
+    .card-services{
         height: 170px;
         margin-bottom: 20px;
         display: flex;
@@ -218,8 +219,8 @@ nav{
     }
 }
 //footer
-footer{
-    padding: 50px;
+.footer{
+    padding: 30px;
     background-color: $dark-bg;
 
     h6{
@@ -293,7 +294,7 @@ footer{
          font-weight: bold;
         }
     }
-    .card{
+    .card-services{
         height: 170px;
         margin-bottom: 20px;
         display: flex;
@@ -353,7 +354,7 @@ footer{
             font-size: medium !important;
         }
     }
-    .card{
+    .card-services{
         height: 170px;
         margin-bottom: 20px;
         display: flex;

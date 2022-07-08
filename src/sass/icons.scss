@@ -12,12 +12,12 @@
     outline: 2px solid #fff;
     transition-property: outline-offset,outline-color,background-color;
     transition-duration: .25s;
-}
-.icon:hover{
-    outline-offset: 4px;
-}
-.icon:hover i{
-    animation: shake .25s;
+    &:hover{
+        outline-offset: 4px;
+    }
+    &:hover i{
+        animation: shake .25s;
+    }
 }
 .icons--instagram:hover{
     background-image:
