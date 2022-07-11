@@ -35,6 +35,18 @@ module.exports = {
       template:'./src/login.html',
       filename:'login.html',
     }),
+    new HtmlWebpackPlugin({
+      template:'./src/gallery-egypt.html',
+      filename:'gallery-egypt.html',
+    }),
+    new HtmlWebpackPlugin({
+      template:'./src/gallery-ist.html',
+      filename:'gallery-ist.html',
+    }),
+    new HtmlWebpackPlugin({
+      template:'./src/sign-in.html',
+      filename:'sign-in.html',
+    }),
 
     new MiniCssExtractPlugin({
         filename:"css/style.css"
@@ -64,14 +76,16 @@ module.exports = {
 
     //   img-loader
     {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [{
-            loader: 'file-loader',
-            options: {
-                name: '[name].[ext]',
-                outputPath: "images",
-            }
-        }, ],
+      test: /\.(png|jpe?g|gif)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath:"images"
+          },
+        },
+      ],
     },
 
     //   font-loader
@@ -87,6 +101,14 @@ module.exports = {
               },
             ],
         },
+        // jquerry-loader
+      {
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
+        options: {
+          exposes: ["$", "jQuery"],
+        },
+      },
     ],
   },
 };

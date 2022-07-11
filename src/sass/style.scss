@@ -3,6 +3,8 @@
 @import './icons.scss';
 @import './titles.scss';
 @import './login.scss';
+@import './gallery.scss';
+@import './sign-in.scss';
 @font-face {
     font-family: 'titles';
     src: url(../fonts/Changa-VariableFont_wght.ttf);
@@ -150,6 +152,7 @@ nav{
         box-shadow: 0 0 15px 2px $second-color-light;
         background-color: $dark-bg;
         color: white;
+        border-radius: 3px;
         
         h4{
             color: $light-blue ;
@@ -305,6 +308,7 @@ nav{
         background-color: $dark-bg;
         color: white;
         padding: 0px;
+        border-radius: 3px;
         h4{
             color: $light-blue ;
             padding: 0 20px;
