@@ -19,7 +19,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: rgb(241, 250, 251);
+    background-image: url("../img/body-logo.png");
+    background-position: center;
+    background-size: cover;
+   background-attachment: fixed;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: "titles";
@@ -171,40 +177,33 @@ nav{
     margin-top: 100px;
     margin-bottom:100px;
     line-height: 33px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     background-color: $dark-bg;
     
-    .carousel{
-        padding-top: 50px;
-        .carousel-inner{
-            position: relative;
-            .img-carousel{
-                width: 60%;
-                height: 30%;
-                border: 10px solid $light-blue-2;
-            }
-            
-        }
-        .fa-arrow-left{
-            font-size: 45px;
-            
-        }
-        .fa-arrow-right{
-            font-size: 45px;
-            
-        }
-        .carousel-caption{
-           position: absolute;
-           bottom: 0px;
-           span{
-            line-height: 53px;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: $light-blue-2;
+    .card{
+        position: relative;
+        border: none;
+        width: 80%;
+        background-color: rgb(241, 250, 251);
+
+        h2{
             font-size: 18px;
-            color: $main-colord;
             font-weight: bold;
-           }
+            color: $main-colord;
+        }
+        small{
+            position: absolute;
+            top: -10%;
+            left: -2%;
+            padding: 30px;
+            background-color: $dark-bg;
+            color: $second-color-light;
+            font-weight: bold;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        img{
+            height: 300px;
         }
     }
 }

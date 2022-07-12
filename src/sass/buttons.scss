@@ -1,8 +1,13 @@
 .btn-send{
-    color: $light-blue-2;
+    color: $dark-bg;
     background-color: $light-blue;
     padding: 10px 15px;
-    font-weight: 500;       
+    font-weight: 500;
+    &:focus,
+    &:hover{
+        color: $second-color-light;
+        background-color: $second-color;
+    }       
 }
 .btn-services{
     color: $second-color;

@@ -3,7 +3,8 @@
     padding-right: 0;
     height: 400px;
     background-image: url(../img/istambul-traveling.jpg);
-    background-position: center;
+    background-position:bottom;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     .img-heading-gallery{
@@ -25,8 +26,9 @@
     padding-right: 0;
     height: 400px;
     background-image: url(../img/egypt-traveling.jpg);
-    background-position: center;
+    background-position:bottom;
     background-size: cover;
+    background-attachment:fixed;
     background-repeat: no-repeat;
     .img-heading-gallery{
         height: 400px;
@@ -55,24 +57,14 @@
 
 }
 // gallery
-.btn, button{
-    &:focus,&:hover{
-
-        outline: none !important;
-        box-shadow: none !important;
-    }
-}
-  
-  #image-gallery .modal-footer{
-    display: block;
-  }
-  
-  .thumb{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.thumb{
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .img-thumbnail{
+    border: none;
     height: 200px;
+    background-color: transparent;
 }
 ol{
     list-style: none;
@@ -86,6 +78,7 @@ ol{
         line-height: 30px;
     }
 }
+
     
 @media (max-width:768px) {
     .img-thumbnail{
