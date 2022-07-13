@@ -3,6 +3,8 @@ import '@laylazi/bootstrap-rtl/dist/js/bootstrap.min.js';
 import 'jquery/dist/jquery.min.js';
 import 'popper.js/dist/popper.min';
 import '../sass/style.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '@fortawesome/fontawesome-free/js/all.min.js'; 
 
 
@@ -27,5 +29,8 @@ import '@fortawesome/fontawesome-free/js/all.min.js';
     }, false);
   })();
 
-
+  AOS.init({
+    duration: 1000,
+    delay:400
+  });
  

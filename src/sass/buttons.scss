@@ -5,15 +5,20 @@
     font-weight: 500;
     &:focus,
     &:hover{
-        color: $second-color-light;
+        color: $light-blue-2;
         background-color: $second-color;
     }       
 }
 .btn-services{
-    color: $second-color;
-    background-color: $second-color-light;
+    color: $dark-bg;
+    background-color: $light-blue-2;
     padding: 10px 15px;
     font-weight: bold;
+
+    &:hover,&:focus{
+        background-color: $second-color;
+        color: #fff;
+    }
 }
 .btn-signin{
     padding: 10px 15px;
