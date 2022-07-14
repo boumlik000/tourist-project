@@ -1,12 +1,15 @@
 .btn-send{
-    color: $dark-bg;
-    background-color: $light-blue;
+    color: $main-colord;
+    background-color: transparent;
     padding: 10px 15px;
+    border: 1px solid $main-colord;
     font-weight: 500;
+    transition: ease-in-out .2s;
     &:focus,
     &:hover{
         color: $light-blue-2;
         background-color: $second-color;
+        border: none;
     }       
 }
 .btn-services{
@@ -26,13 +29,14 @@
     background-color: $dark-bg;
     color: $light-blue-2;
     &:hover,:focus{
-        color: $light-blue-2 ;
+        background-color: $second-color;
+        
     }
 }
 
 @media (max-width:992px) {
     .btn-send{
-        color: $light-blue-2;
+        color: $main-colord;
         background-color: $light-blue;
         padding: 7px 12px !important;
         font-weight: 500;
@@ -41,7 +45,7 @@
 }
 @media (max-width:554px) {
     .btn-send{
-        color: $light-blue-2;
+        color: $main-colord;
         background-color: $light-blue;
         padding: 7px 12px !important;
         font-weight: 500;

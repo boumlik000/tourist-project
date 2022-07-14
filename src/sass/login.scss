@@ -9,9 +9,9 @@
         width: 50px;
 
         &:hover,:focus{
-            background-color: $light-blue-2;
+            background-color: $second-color !important;
             padding: 2px;
-            filter: invert(27%) sepia(83%) saturate(372%) hue-rotate(176deg) brightness(93%) contrast(81%);
+            
         }
     }
     .form-control{

@@ -26,6 +26,8 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
+    
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -113,6 +115,7 @@ nav{
     background-image: url(../img/travel-img.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     
     .header{
         background: #29324178;
@@ -193,7 +196,7 @@ nav{
         position: relative;
         border: none;
         width: 80%;
-        background-color: rgb(241, 250, 251);
+        background-color: rgb(255, 237, 244);
 
         h2{
             font-size: 18px;
@@ -202,14 +205,15 @@ nav{
         }
         small{
             position: absolute;
-            top: -10%;
-            left: -2%;
-            padding: 30px;
-            background-color: transparent;
+            top:10px;
+            left: 2%;
+            padding: 8px 15px;
+            background-color: $dark-bg;
             color: $light-blue-2;
             font-weight: bold;
-            border-radius: 50%;
+            border-radius: 5px;
             font-size: 20px;
+            box-shadow: 0 0 10px 1px gray;
         }
         img{
             height: 300px;
@@ -226,7 +230,7 @@ nav{
         flex-direction: column;
     }
     .icons{
-        color: #3d5a80;
+        color: $main-colord;
     }
 }
 //footer
